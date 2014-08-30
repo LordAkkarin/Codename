@@ -329,7 +329,9 @@
 		"Zulu",
 
 		"Hot",
-		"Cold"
+		"Cold",
+
+		"Spam"
 	],
 
 	"object":	[
@@ -1057,6 +1059,7 @@
 		"SCALAAAAAAAAAAAAAAAAAA",
 		"21",
 		"42",
+		"Spam",
 
 		"Totally not Chuck Norris",
 		"Chuck Norris"

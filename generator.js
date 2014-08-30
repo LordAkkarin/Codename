@@ -13,7 +13,7 @@
 		do {
 			attribute = data["attribute"][Math.floor ((Math.random () * data["attribute"].length))];
 			object = data["object"][Math.floor ((Math.random () * data["object"].length))];
-		} while (attribute.toLowerCase () == object.toLowerCase ()); // ensure we got a "proper" name
+		} while ((attribute.toLowerCase () == object.toLowerCase () && attribute != "Spam")); // ensure we got a "proper" name
 
 		// append to DOM
 		$('#codename-attribute').text (attribute);
