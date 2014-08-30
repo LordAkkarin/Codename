@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8" />
+
+		<title>Codename Generator</title>
+		<meta name="keywords" content="Codename,Generator,Code,Name,Project,Name" />
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="generator.js"></script>
+	</head>
+	<body>
+		<header id="headerContainer">
+			<nav class="navbar navbar-default">
+				<section class="container">
+					<div class="navbar-header">
+						<span class="navbar-brand">Codename Generator</span>
+					</div>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="https://github.com/LordAkkarin/Codename">Source @ GitHub</a></li>
+					</ul>
+				</section>
+			</nav>
+		</header>
+
+		<section id="mainContainer">
+			<article class="container">
+				<noscript>
+					<div class="alert alert-danger">
+						<strong>Whoops!</strong>
+						Your browser doesn't seem to execute JavaScript! Please enable it in order to use this page.
+					</div>
+				</noscript>
+
+				<div class="jumbotron">
+					<h1 class="text-center"><span id="codename-attribute"></span> <span id="codename-object"></span></h1>
+					<hr />
+					<div class="text-center">
+						<a id="codename-generate" href="javascript:void (0);" class="btn btn-primary btn-lg disabled">Generate</a>
+					</div>
+				</div>
+			</article>
+		</section>
+	</body>
+</html>
