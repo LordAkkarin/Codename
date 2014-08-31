@@ -43,6 +43,9 @@
 			name += data["vowel"][Math.floor ((Math.random() * data["vowel"].length))];
 		}
 
+		// append another consonant if needed
+		if (data["vowel"].indexOf (suffix[0]) >= 0) name += data["consonant"][Math.floor ((Math.random() * data["consonant"].length))];
+
 		// append suffix
 		name += suffix;
 
