@@ -1,11 +1,14 @@
 (function ($) {
+	// constants
+	var PROJECT_NAME_LENGTH = 2;
+
 	// initialize variables
 	var data = null;
 
 	/**
 	 * Re-Generates a new codename.
 	 */
-	var generate = function () {
+	var generateCodename = function () {
 		// get random elements
 		var attribute = null;
 		var object = null;
@@ -20,6 +23,34 @@
 		$('#codename-object').text (object);
 	};
 
+	/**
+	 * Re-Generates a new project name.
+	 */
+	var generateProjectname = function () {
+		// generate name
+		var name = '';
+		var suffix = data["suffix"][Math.floor ((Math.random() * data["suffix"].length))];
+
+		// select random prefix
+		name += data["prefix"][Math.floor ((Math.random () * data["prefix"].length))];
+
+		// append random consonant and vowel
+		for (var i = 0; i < PROJECT_NAME_LENGTH; i++) {
+			// append consonant
+			name += data["consonant"][Math.floor ((Math.random() * data["consonant"].length))];
+
+			// append vowel
+			name += data["vowel"][Math.floor ((Math.random() * data["vowel"].length))];
+		}
+
+		// append suffix
+		name += suffix;
+
+		// update DOM
+		$('#codename-attribute').text ('');
+		$('#codename-object').text (name);
+	}
+
 	// wait for document to be ready
 	$(document).ready (function () {
 		// load templates
@@ -32,11 +63,14 @@
 			data = newData;
 
 			// re-generate
-			generate ();
+			generateCodename ();
 
 			// hook
 			$('#codename-generate').removeClass ('disabled');
-			$('#codename-generate').click (generate);
+			$('#codename-generate').click (generateCodename);
+
+			$('#projectname-generate').removeClass ('disabled');
+			$('#projectname-generate').click (generateProjectname);
 		});
 	});
 }) (jQuery);

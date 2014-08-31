@@ -1070,5 +1070,75 @@
 
 		"Totally not Chuck Norris",
 		"Chuck Norris"
+	],
+	
+	"prefix":	[
+		"Aero",
+		"Anti",
+		"Auto",
+		"Bi",
+		"Bio",
+		"Cine",
+		"Deca",
+		"Demo",
+		"Dyna",
+		"Eco",
+		"Ergo",
+		"Geo",
+		"Gyno",
+		"Hypo",
+		"Kilo",
+		"Mega",
+		"Tera",
+		"Mini",
+		"Nano",
+		"Duo"
+	],
+	
+	"suffix":	[
+		"dom",
+		"ity",
+		"ment",
+		"sion",
+		"ness",
+		"ence",
+		"er",
+		"ist",
+		"tion",
+		"or"
+	],
+	
+	"vowel":	[
+		"a",
+		"o",
+		"e",
+		"i",
+		"y",
+		"u",
+		"ou",
+		"oo"
+	],
+	
+	"consonant":	[
+		"w",
+		"r",
+		"t",
+		"p",
+		"s",
+		"d",
+		"f",
+		"g",
+		"h",
+		"j",
+		"k",
+		"l",
+		"z",
+		"x",
+		"c",
+		"v",
+		"b",
+		"n",
+		"m",
+		"qu"
 	]
 }
