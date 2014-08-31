@@ -1,6 +1,6 @@
 (function ($) {
 	// constants
-	var PROJECT_NAME_LENGTH = 2;
+	var PROJECT_NAME_LENGTH = 5;
 
 	// initialize variables
 	var data = null;
@@ -35,7 +35,7 @@
 		name += data["prefix"][Math.floor ((Math.random () * data["prefix"].length))];
 
 		// append random consonant and vowel
-		for (var i = 0; i < PROJECT_NAME_LENGTH; i++) {
+		for (var i = 0; i < Math.floor ((Math.random () * PROJECT_NAME_LENGTH)); i++) {
 			// append consonant
 			name += data["consonant"][Math.floor ((Math.random() * data["consonant"].length))];
 
